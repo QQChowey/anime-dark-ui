@@ -1,138 +1,168 @@
 {
-    "name": "anime-dark-ui",
-    "theme": "ui",
-    "version": "1.1.1",
-    "description": "An Anime dark ui theme for atome.io editor",
-    "keywords": [
-        "ui",
-        "theme",
-        "anime"
-    ],
-    "main": "script/index",
-    "repository": "https://github.com/knose1/anime-dark-ui",
-    "license": "MIT",
-    "engines": {
-        "atom": ">=1.0.0 <2.0.0"
-    },
-    "configSchema": {
-        "backgrounds": {
-            "title": "Background-images",
-            "type": "object",
-            "order": 1,
-            "properties": {
-                "1": {
-                    "order": 1,
-                    "description": "Change the background image. You can precise up to 10 background to have multiple background. (Works with Background display time)",
-                    "default": "https://wallpapersite.com/images/wallpapers/anime-girl-3840x2160-fire-angel-4k-8040.jpg",
-                    "type": "string"
-                },
-                "2": {
-                    "order": 2,
-                    "default": "https://i.pinimg.com/originals/73/d3/77/73d3776d73adcbe4b55f10dd7ddfc778.jpg",
-                    "type": "string"
-                },
-                "3": {
-                    "order": 3,
-                    "default": "null",
-                    "type": "string"
-                },
-                "4": {
-                    "order": 4,
-                    "default": "null",
-                    "type": "string"
-                },
-                "5": {
-                    "order": 5,
-                    "default": "null",
-                    "type": "string"
-                },
-                "6": {
-                    "order": 6,
-                    "default": "null",
-                    "type": "string"
-                },
-                "7": {
-                    "order": 7,
-                    "default": "null",
-                    "type": "string"
-                },
-                "8": {
-                    "order": 8,
-                    "default": "null",
-                    "type": "string"
-                },
-                "9": {
-                    "order": 9,
-                    "default": "null",
-                    "type": "string"
-                },
-                "10": {
-                    "order": 10,
-                    "default": "null",
-                    "type": "string"
-                }
-            }
+  "_from": "https://www.atom.io/api/packages/anime-dark-ui/versions/1.1.1/tarball",
+  "_id": "anime-dark-ui@1.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-J0jmMSuYUhs6HsG4woo5yXQCf7RMoBHkG6qfK5tWZQG6y3V31h2jSFb+SWHqRQBBQGywino7OhGloHOZny3NQg==",
+  "_location": "/anime-dark-ui",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/anime-dark-ui/versions/1.1.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/anime-dark-ui/versions/1.1.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/anime-dark-ui/versions/1.1.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/anime-dark-ui/versions/1.1.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/anime-dark-ui/versions/1.1.1/tarball",
+  "_shasum": "7b9e08202808c323166a3d1993ced1202c3d6ba8",
+  "_spec": "https://www.atom.io/api/packages/anime-dark-ui/versions/1.1.1/tarball",
+  "_where": "C:\\Users\\quant\\AppData\\Local\\Temp\\apm-install-dir-119119-15672-1ahrq98.84iy",
+  "bugs": {
+    "url": "https://github.com/knose1/anime-dark-ui/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "backgrounds": {
+      "title": "Background-images",
+      "type": "object",
+      "order": 1,
+      "properties": {
+        "1": {
+          "order": 1,
+          "description": "Change the background image. You can precise up to 10 background to have multiple background. (Works with Background display time)",
+          "default": "https://wallpapersite.com/images/wallpapers/anime-girl-3840x2160-fire-angel-4k-8040.jpg",
+          "type": "string"
         },
-        "darkObject": {
-            "order": 2,
-            "title": "Dark Backgrounds",
-            "type": "object",
-            "properties": {
-                "dark": {
-                    "title": "Dark Background percentage",
-                    "description": "The alpha percentage for black color background (over the background-image).",
-                    "order": 1,
-                    "type": "integer",
-                    "default": 70,
-                    "minimum": "0",
-                    "maximum": "100"
-                },
-                "dark_settings": {
-                    "title": "Dark setting Background percentage",
-                    "description": "Same as **Dark Background percentage** but for the setting panel.",
-                    "order": 2,
-                    "type": "integer",
-                    "default": 80,
-                    "minimum": "0",
-                    "maximum": "100"
-                }
-            }
+        "2": {
+          "order": 2,
+          "default": "https://i.pinimg.com/originals/73/d3/77/73d3776d73adcbe4b55f10dd7ddfc778.jpg",
+          "type": "string"
         },
-        "timing": {
-            "order": 3,
-            "title": "Timing",
-            "type": "object",
-            "properties": {
-                "timer": {
-                    "title": "Background timer",
-                    "description": "Time in minutes before the background is switched. Set it to 0 to have a random background",
-                    "type": "integer",
-                    "default": 0,
-                    "order": 1,
-                    "minimum": "0",
-                    "maximum": "60"
-                },
-                "transiton": {
-                    "title": "Transition duration",
-                    "description": "The duration of the background transition in seconds",
-                    "type": "number",
-                    "default": 1,
-                    "order": 2,
-                    "minimum": "0",
-                    "maximum": "30"
-                }
-            }
+        "3": {
+          "order": 3,
+          "default": "null",
+          "type": "string"
         },
-        "tab": {
-            "title": "Tab Size",
-            "description": "Change the tab height for the UI.",
-            "type": "string",
-            "default": "soft",
-            "enum": [
-                "soft",
-                "large"
-            ],
-            "order": 4
+        "4": {
+          "order": 4,
+          "default": "null",
+          "type": "string"
+        },
+        "5": {
+          "order": 5,
+          "default": "null",
+          "type": "string"
+        },
+        "6": {
+          "order": 6,
+          "default": "null",
+          "type": "string"
+        },
+        "7": {
+          "order": 7,
+          "default": "null",
+          "type": "string"
+        },
+        "8": {
+          "order": 8,
+          "default": "null",
+          "type": "string"
+        },
+        "9": {
+          "order": 9,
+          "default": "null",
+          "type": "string"
+        },
+        "10": {
+          "order": 10,
+          "default": "null",
+          "type": "string"
         }
+      }
+    },
+    "darkObject": {
+      "order": 2,
+      "title": "Dark Backgrounds",
+      "type": "object",
+      "properties": {
+        "dark": {
+          "title": "Dark Background percentage",
+          "description": "The alpha percentage for black color background (over the background-image).",
+          "order": 1,
+          "type": "integer",
+          "default": 70,
+          "minimum": "0",
+          "maximum": "100"
+        },
+        "dark_settings": {
+          "title": "Dark setting Background percentage",
+          "description": "Same as **Dark Background percentage** but for the setting panel.",
+          "order": 2,
+          "type": "integer",
+          "default": 80,
+          "minimum": "0",
+          "maximum": "100"
+        }
+      }
+    },
+    "timing": {
+      "order": 3,
+      "title": "Timing",
+      "type": "object",
+      "properties": {
+        "timer": {
+          "title": "Background timer",
+          "description": "Time in minutes before the background is switched. Set it to 0 to have a random background",
+          "type": "integer",
+          "default": 0,
+          "order": 1,
+          "minimum": "0",
+          "maximum": "60"
+        },
+        "transiton": {
+          "title": "Transition duration",
+          "description": "The duration of the background transition in seconds",
+          "type": "number",
+          "default": 1,
+          "order": 2,
+          "minimum": "0",
+          "maximum": "30"
+        }
+      }
+    },
+    "tab": {
+      "title": "Tab Size",
+      "description": "Change the tab height for the UI.",
+      "type": "string",
+      "default": "soft",
+      "enum": [
+        "soft",
+        "large"
+      ],
+      "order": 4
     }
+  },
+  "deprecated": false,
+  "description": "An Anime dark ui theme for atome.io editor",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/knose1/anime-dark-ui#readme",
+  "keywords": [
+    "ui",
+    "theme",
+    "anime"
+  ],
+  "license": "MIT",
+  "main": "script/index",
+  "name": "anime-dark-ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knose1/anime-dark-ui.git"
+  },
+  "theme": "ui",
+  "version": "1.1.1"
 }

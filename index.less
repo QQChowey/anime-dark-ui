@@ -299,6 +299,7 @@ atom-workspace-axis.horizontal{
         //header
         section .section-heading, .section .section-heading {
             color:white;
+
         }
         //main
         .text {
@@ -318,6 +319,10 @@ atom-workspace-axis.horizontal{
 		}
 
 		//Setting head <a> (when modifing theme settings for example)
+		.breadcrumb {
+			background-color: transparent;
+		}
+
 		.breadcrumb > li a {
 			color:#ddd
 		}
@@ -361,6 +366,7 @@ atom-workspace-axis.horizontal{
 
 	//Setting sub-section
 	.settings-view .sub-section .sub-section-heading{
+		background-color: black;
 		color:#718f91;
 	}
 
@@ -437,17 +443,17 @@ atom-workspace-axis.horizontal{
 
 .tab-bar {
     background-color:rgba(255, 255, 255, 0.08);
-    height: 22px;
+    height: 24px;
     transition:1s linear background-color;
 
     div {
-        font-size:13px;
+        font-size:12px;
         position:relative;
         text-align: center;
     }
     li {
         border-left:1px black solid;
-        border-right:1px black solid;
+        //border-right:1px black solid;
     }
     li.active {
         background-color:hsla(174, 82%, 100%, 0.2);
@@ -467,22 +473,27 @@ atom-workspace-axis.horizontal{
     //Show the cross for on unactive tabs :hover
     :hover .close-icon {
         visibility:visible;
+		top: 50%;
+		left: 100%;
+		padding-right: 40px;
     }
 
     //Modified tab content (file)
     .tab.modified:not(:hover) .close-icon {
         visibility:visible;
+		top: 50%;
+		left: 90%;
     }
 }
-.tab-bar[h="22px"] {
-    height: 22px;
+.tab-bar[h="24px"] {
+    height: 24px;
     .icon::before {
-        font-size:14px;
+        font-size:12px;
         top: 10px;
     }
 
     div {
-        font-size:13px;
+        font-size:12px;
     }
 
     .tab.modified:not(:hover) .close-icon {
@@ -491,10 +502,10 @@ atom-workspace-axis.horizontal{
     }
 }
 
-.tab-bar[h="30px"] {
-    height: 30px;
+.tab-bar[h="24px"] {
+    height: 24px;
     div {
-        font-size:14px;
+        font-size:12px;
         top:3px
     }
 
@@ -652,6 +663,12 @@ atom-workspace-axis.horizontal{
 	/*   Files Tab   */
 	/*****************/
 
+	.tab-bar div {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
 	.tab-bar .syntax--tab:before {
 	    position: absolute;
 	    pointer-events: none;
@@ -685,6 +702,7 @@ atom-workspace-axis.horizontal{
 	.tree-view {
 		background: @invisible;
 		margin-top:-2px;
+		font-size: 12px;
 	}
 
 	.tree-view ::-webkit-scrollbar{
